@@ -1,0 +1,38 @@
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url('/Assets/Fonts/Comfortaa-Regular.ttf');
+}
+
+@font-face {
+    font-family: Comfortaa-Light;
+    src: url('/Assets/Fonts/Comfortaa-Light.ttf');
+}
+
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url('/Assets/Fonts/Comfortaa-Bold.ttf');
+}
+
+body {
+    background-color: #0a111e;
+    color: rgb(241, 241, 241);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Comfortaa-Regular;
+    margin-bottom: 18px;
+}
+
+h4 {
+    font-family: Comfortaa-Light;
+    font-weight: 200;
+}
+
+.subtitle {
+    font-family: Comfortaa-Light;
+    font-weight: 100;
+    color:rgb(185, 185, 185);
+    margin: 0;
+}
