@@ -1,0 +1,99 @@
+.header {
+    text-align: center;
+}
+.button {
+    background: none;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    flex: 1;
+}
+
+.button:hover {
+    background: #7b72af;
+    transform: scale(1.1);
+    color: black;
+}
+
+.primary {
+    border: 2px solid #7b72af;
+    background: #7b72af;
+    color: black;
+}
+
+.secondary {
+    border: 2px solid #7b72af;
+    color: #7b72af;
+}
+
+.button > h4 {
+    padding: 0;
+    margin: 15px;
+    font-weight: 900;
+    font-family: Comfortaa-Bold;
+}
+
+.buttons {
+    margin-top: 50px;
+    width: 400px;
+    display: inline-flex;
+    text-align: center;
+}
+.bike {
+    text-align: center;
+    margin: 0 auto;
+    height: 50vh;
+    width: 50vw;
+}
+@font-face {
+    font-family: Comfortaa-Regular;
+    src: url('/Comfortaa-Regular.ae0ca946.ttf');
+}
+
+@font-face {
+    font-family: Comfortaa-Light;
+    src: url('/Comfortaa-Light.120d917f.ttf');
+}
+
+@font-face {
+    font-family: Comfortaa-Bold;
+    src: url('/Comfortaa-Bold.15c85628.ttf');
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('/Roboto-Regular.397fb7e7.ttf');
+}
+
+body {
+    background-color: #0a111e;
+    color: rgb(241, 241, 241);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Roboto-Regular;
+    letter-spacing: 1px;
+    margin-bottom: 18px;
+}
+
+h4 {
+    font-family: Comfortaa-Light;
+    font-weight: 200;
+}
+
+.subtitle {
+    font-family: Comfortaa-Light;
+    font-weight: 100;
+    color:rgb(185, 185, 185);
+    margin: 0;
+}
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
