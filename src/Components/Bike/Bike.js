@@ -5,7 +5,12 @@ import { useProgress, Html } from "@react-three/drei";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { Suspense } from "react";
+
 import bikeBg from "../../Assets/Bike/bike-bg.png";
+import github from "../../Assets/Images/github.png";
+import linkedin from "../../Assets/Images/linkedin.png";
+import instagram from "../../Assets/Images/instagram.png";
+import mouseSvg from "../../Assets/Images/mouse.svg";
 
 const Scene = () => {
     const fbx = useLoader(FBXLoader, "Bike.fbx");
@@ -28,8 +33,8 @@ const Controls = () => {
         enablePan={false}
         enableZoom={false}
         rotateSpeed={0.6}
-        minPolarAngle={1}
-        maxPolarAngle={1}
+        minPolarAngle={1.2}
+        maxPolarAngle={1.2}
         autoRotate={true}
         autoRotateSpeed={0.75} />
 }
@@ -49,17 +54,31 @@ const Lights = () => {
 
 const Bike = () => {
     return (
-        <div className="bike">
-            <div className="bike-bg">
-                <img src={bikeBg} alt="bike-bg" />
+        <div className="container-bike">
+            <div className="left-side">
+                <img src={github} alt="github" />
+                <img src={linkedin} alt="linkedin" />
+                <img src={instagram} alt="instagram" />
+                <div className="h-line"></div>
             </div>
-            <Canvas>
-                <Suspense fallback={<Loader />}>
-                    <Scene />
-                    <Lights />
-                </Suspense>
-                <Controls />
-            </Canvas>
+            <div className="bike">
+                <div className="bike-bg">
+                    <img src={bikeBg} alt="bike-bg" />
+                </div>
+                <Canvas>
+                    <Suspense fallback={<Loader />}>
+                        <Scene />
+                        <Lights />
+                    </Suspense>
+                    <Controls />
+                </Canvas>
+            </div>
+            <div className="right-side">
+                <img src={mouseSvg} alt="mouse" />
+                <div className="scrolldown">
+                    <h4>Scroll Down</h4>
+                </div>
+            </div>
         </div>
     );
 }
