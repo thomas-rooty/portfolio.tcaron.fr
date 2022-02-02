@@ -13,6 +13,11 @@
     src: url('/Assets/Fonts/Comfortaa-Bold.ttf');
 }
 
+@font-face {
+    font-family: Roboto-Regular;
+    src: url('/Assets/Fonts/Roboto-Regular.ttf');
+}
+
 body {
     background-color: #0a111e;
     color: rgb(241, 241, 241);
@@ -21,7 +26,8 @@ body {
 }
 
 h1 {
-    font-family: Comfortaa-Regular;
+    font-family: Roboto-Regular;
+    letter-spacing: 1px;
     margin-bottom: 18px;
 }
 

@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-	"start": "parcel src/index.html --open",
+    "start": "parcel src/index.html --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@react-three/fiber": "^7.0.26",
     "parcel-bundler": "^1.12.5",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "three": "^0.137.5"
   }
 }

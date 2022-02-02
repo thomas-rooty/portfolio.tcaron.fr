@@ -1,0 +1,44 @@
+.button {
+    background: none;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    flex: 1;
+}
+
+.button:hover {
+    background: #7b72af;
+    transform: scale(1.1);
+    color: black;
+}
+
+.primary {
+    border: 2px solid #7b72af;
+    background: #7b72af;
+    color: black;
+}
+
+.secondary {
+    border: 2px solid #7b72af;
+    color: #7b72af;
+}
+
+.button > h4 {
+    padding: 0;
+    margin: 15px;
+    font-weight: 900;
+    font-family: Comfortaa-Bold;
+}
+
+.buttons {
+    margin-top: 50px;
+    width: 400px;
+    display: inline-flex;
+    text-align: center;
+}
