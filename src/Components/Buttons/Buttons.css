@@ -1,15 +1,12 @@
 .button {
     background: none;
     border-radius: 10px;
-    margin-left: 25px;
-    margin-right: 25px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
     transition: ease-in-out 0.2s;
-    flex: 1;
+    width: 170px;
 }
 
 .button:hover {
@@ -38,7 +35,8 @@
 
 .buttons {
     margin-top: 50px;
-    width: 400px;
-    display: inline-flex;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
