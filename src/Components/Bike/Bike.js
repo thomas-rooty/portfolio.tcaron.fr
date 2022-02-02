@@ -5,6 +5,7 @@ import { useProgress, Html } from "@react-three/drei";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { FBXLoader } from "three/examples/jsm/loaders/FBXLoader";
 import { Suspense } from "react";
+import bikeBg from "../../Assets/Bike/bike-bg.png";
 
 const Scene = () => {
     const fbx = useLoader(FBXLoader, "Bike.fbx");
@@ -18,7 +19,7 @@ const Controls = () => {
     const controls = useRef();
     const { camera, gl } = useThree();
     //Set the camera position and the camera target
-    camera.position.set(0, 1, 4);
+    camera.position.set(0, 3, 3);
     useFrame(() => controls.current.update());
     return <orbitControls
         ref={controls}
@@ -36,21 +37,22 @@ const Controls = () => {
 const Loader = () => {
     const { progress } = useProgress();
     return (
-        <Html center>{progress} % loaded</Html>
+        <Html center>Loading</Html>
     );
 }
 
 const Lights = () => {
     return (
-        <>
-            <ambientLight intensity={0.5} />
-        </>
+        <ambientLight intensity={0.5} />
     );
 }
 
 const Bike = () => {
     return (
         <div className="bike">
+            <div className="bike-bg">
+                <img src={bikeBg} alt="bike-bg" />
+            </div>
             <Canvas>
                 <Suspense fallback={<Loader />}>
                     <Scene />

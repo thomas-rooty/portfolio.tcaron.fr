@@ -1,6 +1,20 @@
+.bike-bg {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 300px;
+    text-align: center;
+}
+
+.bike-bg > img {
+    width: auto;
+    height: 60vh;
+}
+
 .bike {
     text-align: center;
-    margin: 0 auto;
+    margin: 200px auto 0;
     height: 50vh;
-    width: 50vw;
+    width: 100%;
 }
