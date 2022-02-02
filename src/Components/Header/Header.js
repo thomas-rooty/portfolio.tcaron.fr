@@ -7,6 +7,7 @@ import CV from "../../Assets/Files/CV_THOMAS_CARON.pdf"
 
 const Header = () => {
     const downloadCV = () => {
+        console.log("Downloading CV")
         window.open(CV, "_blank")
     }
 

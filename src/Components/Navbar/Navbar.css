@@ -1,0 +1,42 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 2vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    overflow: hidden;
+    background: none;
+}
+
+.navbar-item {
+    float: left;
+}
+
+.right{
+    float: right!important;
+}
+
+.navbar-item > a {
+    display: block;
+    color: #837cac;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Roboto-Regular;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: ease-in-out 0.2s;
+}
+
+.navbar-item > a:hover {
+    transform: scale(1.1);
+}
+
+#dark-mode-button, #light-mode-button {
+    color: rgb(254, 255, 215);
+    display: none;
+}
+
+.active {
+    display: block!important;
+}
