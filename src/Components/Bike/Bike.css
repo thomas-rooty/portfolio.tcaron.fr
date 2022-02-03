@@ -29,6 +29,7 @@
 .left-side,
 .right-side {
     display: flex;
+    z-index: 2;
     width: 10vw;
     height: 150px;
     flex-direction: column;
@@ -50,7 +51,7 @@
 }
 
 .left-side>img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .right-side>img {
@@ -69,4 +70,25 @@
 
 canvas {
     margin-top: 130px;
+}
+
+/* Media query below 800px width */
+@media screen and (max-width: 800px) {
+    .container-bike {
+        flex-direction: column;
+    }
+
+    .left-side {
+        flex-direction: row;
+        width: 65vw;
+        margin-bottom: 30px;
+    }
+
+    .left-side>img {
+        width: 50px;
+    }
+
+    .right-side, .h-line {
+        display: none;
+    }
 }

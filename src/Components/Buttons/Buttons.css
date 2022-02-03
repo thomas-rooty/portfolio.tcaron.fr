@@ -39,4 +39,17 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 45vw;
+    margin: 50px auto;
+}
+
+/* Media query below 800px width */
+@media screen and (max-width: 800px) {
+    .buttons {
+        width: 100vw;
+    }
+
+    .button {
+        width: 160px;
+    }
 }

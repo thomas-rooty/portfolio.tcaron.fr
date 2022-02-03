@@ -52,13 +52,22 @@ const Lights = () => {
     );
 }
 
+const RedirectTo = (link) => {
+    // If on mobile
+    if (window.innerWidth < 800) {
+        window.location.href = link;
+    } else {
+        window.open(link, "_blank");
+    }
+}
+
 const Bike = () => {
     return (
         <div className="container-bike">
             <div className="left-side">
-                <img src={github} alt="github" />
-                <img src={linkedin} alt="linkedin" />
-                <img src={instagram} alt="instagram" />
+                <img onClick={() => RedirectTo("https://github.com/thomas-rooty")} src={github} alt="github" />
+                <img onClick={() => RedirectTo("https://www.linkedin.com/in/dev-thomas-caron/")} src={linkedin} alt="linkedin" />
+                <img onClick={() => RedirectTo("https://instagram.com/tho_macaron")} src={instagram} alt="instagram" />
                 <div className="h-line"></div>
             </div>
             <div className="bike">
