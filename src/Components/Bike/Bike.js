@@ -60,6 +60,7 @@ const RedirectTo = (link) => {
     }
 }
 
+//noinspection unused
 const BikeScene = () => {
     return (
         <Canvas>
