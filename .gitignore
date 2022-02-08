@@ -3,7 +3,3 @@
 /package.json.bak
 /.idea
 /.idea/
-
-#Ignore dist folder but not Bike.fbx
-/dist/*
-!/dist/Bike.fbx
