@@ -1,13 +1,10 @@
 .bike-bg {
-    justify-content: center;
-    position: absolute;
-    left: 0;
-    right: 0;
+    height: 100%
 }
 
 .bike-bg>img {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 .container-bike {

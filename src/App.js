@@ -5,6 +5,7 @@ import './App.css'
 import Header from "./Components/Header/Header"
 import Bike from "./Components/Bike/Bike"
 import Navbar from "./Components/Navbar/Navbar";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
     return (
@@ -12,6 +13,7 @@ const App = () => {
             <Navbar />
             <Header />
             <Bike />
+            <Footer />
         </div>
     )
 };

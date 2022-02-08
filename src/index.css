@@ -33,18 +33,18 @@ body::-webkit-scrollbar {
 }
 
 h1 {
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular, sans-serif;
     letter-spacing: 1px;
     margin-bottom: 18px;
 }
 
 h4 {
-    font-family: Comfortaa-Light;
+    font-family: Comfortaa-Light, sans-serif;
     font-weight: 200;
 }
 
 .subtitle {
-    font-family: Comfortaa-Light;
+    font-family: Comfortaa-Light, sans-serif;
     font-weight: 100;
     color:rgb(185, 185, 185);
     margin: 0;
