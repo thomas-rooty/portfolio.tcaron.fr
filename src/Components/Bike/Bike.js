@@ -29,7 +29,7 @@ const Controls = () => {
     return <orbitControls
         ref={controls}
         args={[camera, gl.domElement]}
-        enableDamping
+        enableDamping={true}
         enablePan={false}
         enableZoom={false}
         rotateSpeed={0.6}
@@ -40,6 +40,7 @@ const Controls = () => {
 }
 
 const Loader = () => {
+    // eslint-disable-next-line no-unused-vars
     const { progress } = useProgress();
     return (
         <Html center>Loading</Html>
@@ -68,7 +69,7 @@ const Bike = () => {
                 <img onClick={() => RedirectTo("https://github.com/thomas-rooty")} src={github} alt="github" />
                 <img onClick={() => RedirectTo("https://www.linkedin.com/in/dev-thomas-caron/")} src={linkedin} alt="linkedin" />
                 <img onClick={() => RedirectTo("https://instagram.com/tho_macaron")} src={instagram} alt="instagram" />
-                <div className="h-line"></div>
+                <div className="h-line"/>
             </div>
             <div className="bike">
                 <div className="bike-bg">
