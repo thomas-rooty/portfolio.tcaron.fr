@@ -8,6 +8,12 @@
     "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "eslintConfig": {
+    "root": true,
+    "rules": {
+      "no-unused-vars": "off"
+    }
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
